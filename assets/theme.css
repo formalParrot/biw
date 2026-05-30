@@ -79,3 +79,8 @@ html.dark {
     --uk-input-o: 65%;
     --uk-focus: oklch(62% 0.155 242.749 / 0.42);
 }
+
+.uk-button-default {
+    --uk-button-hover-bg: var(--uk-secondary);
+    --uk-button-hover-color: var(--uk-secondary-f);
+}
