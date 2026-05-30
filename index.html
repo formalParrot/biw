@@ -34,7 +34,6 @@
                 <p class="uk-p">Description goes here.</p>
 
                 <!-- Theme Button -->
-                <!--
                 <button
                     id="themeBtn"
                     class="uk-button uk-button-default uk-button-xsmall"
@@ -58,46 +57,45 @@
                         icon="sun"
                     ></uk-icon>
                 </button>
-                -->
             </div>
         </div>
 
-        <script>
-            window.Lucide = {};
-            window.ApexCharts = {};
-        </script>
+        <div>
+            <script>
+                window.Lucide = {};
+                window.ApexCharts = {};
+            </script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/frankenstyle@0.3.7/dist/js/hwc-icon.iife.js"
-            type="module"
-        ></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/frankenstyle@0.3.7/dist/js/hwc-icon.iife.js"
+                type="module"
+            ></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/frankenstyle@0.3.7/dist/js/hwc-components.iife.js"
-            type="module"
-        ></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/frankenstyle@0.3.7/dist/js/hwc-components.iife.js"
+                type="module"
+            ></script>
 
-        <!-- Theme Toggle -->
-        <!--
-        <script>
-            const btn = document.getElementById("themeBtn");
-            const icon = document.getElementById("themeIcn");
+            <!-- Theme Toggle -->
+            <script>
+                const btn = document.getElementById("themeBtn");
+                const icon = document.getElementById("themeIcn");
 
-            let isLight = localStorage.getItem("theme") === "light";
+                let isLight = localStorage.getItem("theme") === "light";
 
-            function applyTheme() {
-                document.documentElement.classList.toggle("dark", !isLight);
-                icon.setAttribute("icon", isLight ? "sun" : "moon");
-                localStorage.setItem("theme", isLight ? "light" : "dark");
-            }
+                function applyTheme() {
+                    document.documentElement.classList.toggle("dark", !isLight);
+                    icon.setAttribute("icon", isLight ? "sun" : "moon");
+                    localStorage.setItem("theme", isLight ? "light" : "dark");
+                }
 
-            applyTheme();
-
-            btn.addEventListener("click", () => {
-                isLight = !isLight;
                 applyTheme();
-            });
-        </script>
-        -->
+
+                btn.addEventListener("click", () => {
+                    isLight = !isLight;
+                    applyTheme();
+                });
+            </script>
+        </div>
     </body>
 </html>
