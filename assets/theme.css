@@ -1,0 +1,81 @@
+:root {
+    --uk-bg: oklch(95% 0.01 90);
+    --uk-bg-f: oklch(10% 0.01 90);
+    --uk-card: oklch(92% 0.01 90);
+    --uk-card-f: oklch(10% 0.01 90);
+    --uk-drop: oklch(93% 0.01 90);
+    --uk-drop-f: oklch(10% 0.01 90);
+
+    /* slightly richer chroma, warmer white foreground */
+    --uk-primary: oklch(52% 0.16 242.749);
+    --uk-primary-f: oklch(99% 0.005 242);
+
+    --uk-secondary: oklch(68% 0.012 90);
+    --uk-secondary-o: 12%;
+    --uk-secondary-f: oklch(22% 0.01 90);
+
+    --uk-muted: oklch(72% 0.01 90);
+    --uk-muted-o: 7%;
+    --uk-muted-f: oklch(42% 0.01 90);
+
+    /* accent now has a tinted foreground instead of dark gray */
+    --uk-accent: oklch(57% 0.19 48.998);
+    --uk-accent-o: 8%;
+    --uk-accent-f: oklch(98% 0.008 48);
+
+    /* semantic fg is now near-white with a color hint, not flat gray */
+    --uk-danger: oklch(61% 0.23 25);
+    --uk-danger-f: oklch(98% 0.01 25);
+    --uk-success: oklch(68% 0.16 160);
+    --uk-success-f: oklch(98% 0.01 160);
+    --uk-warning: oklch(76% 0.19 72);
+    --uk-warning-f: oklch(20% 0.04 72); /* dark on yellow — intentional */
+    --uk-info: oklch(60% 0.21 258);
+    --uk-info-f: oklch(98% 0.01 258);
+
+    --uk-border: oklch(83% 0.012 90);
+    --uk-border-o: 65%;
+    --uk-input: oklch(83% 0.012 90);
+    --uk-input-o: 65%;
+    --uk-focus: oklch(52% 0.16 242.749 / 0.35);
+}
+
+html.dark {
+    --uk-bg: oklch(13% 0.006 90);
+    --uk-bg-f: oklch(94% 0.005 90);
+    --uk-card: oklch(16% 0.006 90);
+    --uk-card-f: oklch(94% 0.005 90);
+    --uk-drop: oklch(17% 0.006 90);
+    --uk-drop-f: oklch(94% 0.005 90);
+
+    --uk-primary: oklch(62% 0.155 242.749);
+    --uk-primary-f: oklch(11% 0.02 242);
+
+    --uk-secondary: oklch(55% 0.012 90);
+    --uk-secondary-o: 12%;
+    --uk-secondary-f: oklch(88% 0.01 90);
+
+    --uk-muted: oklch(55% 0.01 90);
+    --uk-muted-o: 7%;
+    --uk-muted-f: oklch(72% 0.01 90);
+
+    /* accent color is RESTORED in dark mode, wasn't just gray */
+    --uk-accent: oklch(67% 0.18 48.998);
+    --uk-accent-o: 10%;
+    --uk-accent-f: oklch(13% 0.03 48);
+
+    --uk-danger: oklch(65% 0.22 25);
+    --uk-danger-f: oklch(13% 0.04 25);
+    --uk-success: oklch(70% 0.16 160);
+    --uk-success-f: oklch(11% 0.04 160);
+    --uk-warning: oklch(79% 0.19 72);
+    --uk-warning-f: oklch(14% 0.05 72);
+    --uk-info: oklch(63% 0.21 258);
+    --uk-info-f: oklch(11% 0.04 258);
+
+    --uk-border: oklch(28% 0.01 90);
+    --uk-border-o: 65%;
+    --uk-input: oklch(28% 0.01 90);
+    --uk-input-o: 65%;
+    --uk-focus: oklch(62% 0.155 242.749 / 0.42);
+}
