@@ -10,7 +10,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/frankenstyle@0.3.7/dist/css/frankenstyle-kit.min.css"
         />
-        <link rel="stylesheet" href="/assets/theme.css" />
+        <link rel="stylesheet" href="" id="themes" />
 
         <script
             src="https://cdn.jsdelivr.net/npm/frankenstyle@0.3.7/dist/js/hwc-core.iife.js"
@@ -95,6 +95,17 @@
                     isLight = !isLight;
                     applyTheme();
                 });
+            </script>
+
+            <script>
+                const link = document.getElementById("themes");
+
+                if (window.location.hostname === "localhost") {
+                    link.href = "/assets/themes.css";
+                } else {
+                    link.href =
+                        "https://raw.githubusercontent.com/formalParrot/biw/refs/heads/main/assets/theme.css";
+                }
             </script>
         </div>
     </body>
